@@ -28,6 +28,7 @@
 
 
     <!-- navbar -->
+    <!-- use https://getbootstrap.com/docs/4.3/examples/album/#  to try understand how grid system is used in navbar collapse section -->
 
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="600">
         <div class="container-fluid" id="navbarText">
@@ -67,51 +68,64 @@
 
 
     <!-- about page -->
-    <div class="container-fluid justify-content-center" id="section1">
-        <!-- <div class="justify-content-center"> -->
 
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Hi There!</h3>
-                <p id="about-description">
-                    I began training as a front and back end developer in April 2019.
-                    My previous experience is in communications and marketing.<br><br>
+    <div class="container-fluid" id="section1">
+        <div class="d-flex container-fluid justify-content-center">
+            <div class="row justify-content-md-center">
+                <div class="col-md-4">
+                    <div id="about-description">
+                        <div id="white-box-text">
+                            <h3>Hi There!</h3>
+                            <p>
+                                I began training as a front and back end developer in April 2019.
+                                My previous experience is in communications and marketing.<br><br>
 
-                    Working alongside web developers made me curious about their work. After extensive research
-                    and
-                    training, which involved an online course with Codecamdemy, and a bootcamp with Kodiri, I
-                    finally
-                    decided to become one!<br><br>
+                                Working alongside web developers made me curious about their work. After extensive
+                                research
+                                and
+                                training, which involved an online course with Codecamdemy, and a bootcamp with
+                                Kodiri, I
+                                finally
+                                decided to become one!<br><br>
 
-                    I also lived in Japan for 5 years which was really fun. Studying Japanese gave me the
-                    confidence to
-                    start learn programming languages.
-                </p>
-                <button type="button" class="btn btn-primary" id="resume-button">Download my resume</button>
+                                I also lived in Japan for 5 years which was really fun. Studying Japanese gave me
+                                the
+                                confidence to
+                                start learn programming languages.
+                            </p>
+                        </div>
+                        <span id="align-resume-button"><button type="button" class="btn btn-primary"
+                                id="resume-button">Download
+                                my resume</button></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar" class="img-fluid">
+                </div>
             </div>
-            <div class="col-md-8">
-                <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar" class="img-fluid">
-            </div>
-
         </div>
-
+    </div>
     </div>
 
 
-    <!-- <div id="section1" class="container-fluid">
-        <h1>Section 1</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-    </div> -->
-
     <div id="section2" class="container-fluid">
-        <h1>Section 2</h1>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
-        <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
-            look at the navigation bar while scrolling!</p>
+        <div class="container">
+            <h4>TOOLS</h4>
+            <div class="container">
+                <img src="/images/HTML.jpg" class="coding-logo" alt="html logo">
+                <img src='/images/CSS.png' class="coding-logo" alt="CSS logo">
+                <img src='/images/js.jpg' class="coding-logo" alt="JS logo">
+                <img src='/images/bootstrap.jpg' class="coding-logo" alt="Bootstrap logo">
+                <img src='/images/React.png' class="coding-logo" alt="React logo">
+                <img src='/images/node.png' class="coding-logo" alt="Node logo">
+            </div>
+
+            <div class="container">
+                <h5>I use HTML 5, CSS (Bootstrap), Javascript (ReactJS, Node, Express, and Handlebars), and for
+                    databases, MySQL and MongoDB</h5>
+            </div>
+
+        </div>
     </div>
     <div id="section3" class="container-fluid">
         <h1>Section 3</h1>
@@ -129,6 +143,21 @@
     </div>
 
 
+</body>
+
+<!-- Optional JavaScript -->
+<script type="text/javascript" src="instructions.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
