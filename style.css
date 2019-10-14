@@ -69,9 +69,11 @@ body {
 
 #section2 {
     padding-top: 50px;
-    height: 500px;
+    height: auto;
     color: #fff;
     background-color: #673ab7;
+    text-align: center;
+    background: linear-gradient(180deg, #0F545B 0%, #47888F 100%), #327A83;
 }
 
 #section3 {
@@ -131,6 +133,10 @@ h1 {
     color: #325B61;
 }
 
+#tools-title {
+    color: white;
+}
+
 h2 {
     font-family: Share Tech Mono;
     font-style: normal;
@@ -146,6 +152,16 @@ h3 {
     font-weight: bold;
     text-align: left;
     padding-bottom: 1em;
+}
+
+h4 {
+    font-family: Share Tech Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
 #headshot {
@@ -186,6 +202,11 @@ h3 {
     display: flex;
 }
 
+.flex-lifestyle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #about-description {
     padding: 1em;
     background: rgba(255, 255, 255, 0.72);
@@ -203,4 +224,10 @@ h3 {
 #resume-button {
     font-family: Share Tech Mono;
     /* margin: 1em; */
+}
+
+.tool-logo {
+    height: 150px;
+    width: auto;
+    background-color: white;
 }
