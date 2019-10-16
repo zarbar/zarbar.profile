@@ -15,18 +15,14 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- Landing Page -->
-    <div class="container-fluid" id="landing-page">
-        <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
-        <h1>Hello, I'm Zara</h1>
-        <h2>A web developer based in London</h2>
-    </div>
+
 
 
     <!-- navbar -->
     <!-- use https://getbootstrap.com/docs/4.3/examples/album/#  to try understand how grid system is used in navbar collapse section -->
 
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
+    <!-- to have a scrolling navbar, include the following to next line: {data-spy="affix"} -->
+    <nav class="navbar navbar-inverse" data-spy="affix">
         <div class="container-fluid" id="navbarText">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -61,6 +57,13 @@
             </div>
         </div>
     </nav>
+
+    <!-- Landing Page -->
+    <div class="container-fluid" id="landing-page">
+        <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
+        <h1>Hello, I'm Zara</h1>
+        <h2>A web developer based in London</h2>
+    </div>
 
 
     <!-- about page -->
@@ -187,17 +190,11 @@
                     <div id="portfolio-item"> Portfolio item 4</div>
                 </div>
             </div>
-
-
         </div>
-
-
-
-
-
     </div>
-    <div id="section4" class="container-fluid">
 
+
+    <div id="section4" class="container-fluid">
         <div class="container" id="contact-form">
             <h3>Drop me a line...</h3>
 
@@ -215,10 +212,17 @@
                     <label for="message" id="form-personalise">Message</label>
                     <textarea class="form-control" id="message form-personalise" rows="3"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
-    </form>
-    </div>
+
+    <div class="container-fluid"></div>
+
+    <footer class="container-fluid navbar navbar-inverse">
+        <div id="foot"></div>
+        <p class="center-align-text">Made with <span class="glyphicon glyphicon-heart"></span> by Zara</p>
+    </footer>
 
 
 </body>
@@ -230,19 +234,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-</script> -->
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-</script> -->
 </body>
-
-<div>
-    <footer class="page-footer">
-        Footer content
-        <!-- <p>Made with <span class="glyphicon glyphicon-heart"></span> by Zara</p> -->
-    </footer>
-</div>
 
 </html>

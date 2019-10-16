@@ -60,7 +60,8 @@ body {
 }
 
 #section1 {
-    padding-top: 50px;
+    padding-top: 5em;
+    padding-bottom: 5em;
     height: auto;
     color: #fff;
     background-color: #FC4445;
@@ -68,7 +69,8 @@ body {
 }
 
 #section2 {
-    padding-top: 50px;
+    padding-top: 5em;
+    padding-bottom: 5em;
     height: auto;
     color: #fff;
     background-color: #673ab7;
@@ -77,14 +79,16 @@ body {
 }
 
 #section3 {
-    padding-top: 50px;
+    padding-top: 5em;
+    padding-bottom: 5em;
     height: auto;
     color: #fff;
     background-color: #3FEEE6;
 }
 
 #section4 {
-    padding-top: 50px;
+    padding-top: 5em;
+    padding-bottom: 5em;
     height: auto;
     color: #fff;
     background-color: #FC4445;
@@ -99,10 +103,12 @@ body {
 
 
 #landing-page {
+    padding-top: 5em;
+    padding-bottom: 5em;
     text-align: center;
     background: #3FEEE6;
     /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #B8E9E6 100%), #3FEEE6; */
-    height: 500px;
+    height: auto;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -202,6 +208,21 @@ p {
     #yayoi {
         max-height: 250px;
     }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #yayoi {
+        width: 100%;
+        height: auto;
+    }
+
+    #logo-collective {
+        width: 80%;
+        height: auto;
+    }
+
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -307,6 +328,7 @@ p {
 
 #contact-form {
     max-width: 700px;
+    padding-bottom: 2em;
 }
 
 footer {
@@ -314,4 +336,8 @@ footer {
     background: black;
     font: Share Tech Mono;
     text-align: center;
+}
+
+#foot {
+    height: 10px;
 }
