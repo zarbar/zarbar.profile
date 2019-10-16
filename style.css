@@ -101,7 +101,7 @@ body {
 #landing-page {
     text-align: center;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #B8E9E6 100%), #3FEEE6;
-    height: 600px;
+    height: 500px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -155,13 +155,18 @@ h3 {
 }
 
 h4 {
-    font-family: Share Tech Mono;
+    font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-weight: bold;
     text-align: center;
-
     color: #FFFFFF;
+}
+
+#tools-font {
+    font-family: Lato;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
 }
 
 #headshot {
@@ -170,7 +175,7 @@ h4 {
     border: 7px solid #327A83;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 219px;
-    margin-top: 15%;
+    margin-top: 3em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -230,4 +235,30 @@ h4 {
     height: 150px;
     width: auto;
     background-color: white;
+    border-radius: 5px;
+}
+
+
+.center-align-text {
+    text-align: center;
+}
+
+.logo-border {
+    /* margin: 1em; */
+    /* background-color: white; */
+    border-radius: 5px;
+}
+
+
+#i-use-description {
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: #FC4445;
+    margin: 0.5em;
+    margin-top: 20%;
+}
+
+
+#yellow-background {
+    background: yellow;
 }

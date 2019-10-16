@@ -16,21 +16,17 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- Landing Page -->
-    <div class="container-fluid centralise" id="landing-page">
-        <div class="d-flex container-fluid justify-content-center">
-
-            <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
-            <h1>Hello, I'm Zara</h1>
-            <h2>A web developer based in London</h2>
-
-        </div>
+    <div class="container-fluid" id="landing-page">
+        <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
+        <h1>Hello, I'm Zara</h1>
+        <h2>A web developer based in London</h2>
     </div>
 
 
     <!-- navbar -->
     <!-- use https://getbootstrap.com/docs/4.3/examples/album/#  to try understand how grid system is used in navbar collapse section -->
 
-    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="600">
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="500">
         <div class="container-fluid" id="navbarText">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -70,37 +66,35 @@
     <!-- about page -->
 
     <div class="container-fluid" id="section1">
-        <div class="d-flex container-fluid justify-content-center">
-            <div class="row justify-content-md-center">
-                <div class="col-md-4">
-                    <div id="about-description">
-                        <div id="white-box-text">
-                            <h3>Hi There!</h3>
-                            <p>
-                                I began training as a front and back end developer in April 2019.
-                                My previous experience is in communications and marketing.<br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="about-description">
+                    <div id="white-box-text">
+                        <h3>Hi There!</h3>
+                        <p>
+                            I began training as a front and back end developer in April 2019.
+                            My previous experience is in communications and marketing.<br><br>
 
-                                Working alongside web developers made me curious about their work. After extensive
-                                research
-                                and
-                                training, which involved an online course with Codecamdemy, and a bootcamp with
-                                Kodiri, I
-                                finally
-                                decided to become one!<br><br>
+                            Working alongside web developers made me curious about their work. After extensive
+                            research
+                            and
+                            training, which involved an online course with Codecamdemy, and a bootcamp with
+                            Kodiri, I
+                            finally
+                            decided to become one!<br><br>
 
-                                I also lived in Japan for 5 years which was really fun. Studying Japanese gave me
-                                the
-                                confidence to
-                                start learn programming languages.
-                            </p>
-                        </div>
-                        <span id="align-resume-button"><button type="button" class="btn btn-primary"
-                                id="resume-button">Download
-                                my resume</button></span>
+                            I also lived in Japan for 5 years which was really fun. Studying Japanese gave me
+                            the
+                            confidence to
+                            start learn programming languages.
+                        </p>
                     </div>
+                    <span id="align-resume-button"><button type="button" class="btn btn-primary"
+                            id="resume-button">Download
+                            my resume</button></span>
                 </div>
                 <div class="col-md-6">
-                    <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar" class="img-fluid">
+                    <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar">
                 </div>
             </div>
         </div>
@@ -112,98 +106,70 @@
 
     <div id="section2" class="container-fluid">
 
-        <h1 id="tools-title">TOOLS</h1>
-
+        <!-- page title -->
         <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    1 of 2
-                </div>
-                <div class="col">
-                    2 of 2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    1 of 3
-                </div>
-                <div class="col">
-                    2 of 3
-                </div>
-                <div class="col">
-                    3 of 3
-                </div>
-            </div>
+            <h1 id="tools-title">TOOLS</h1>
         </div>
 
-
-
-        <!-- grid for language logos -->
         <div class="container">
-
             <div class="row">
-                <div class="col">
+                <!-- <div class="col-md-6 col-sm-3"> -->
+                <div class="col col-md-8">
 
-                    <!-- html logo -->
-                    <div>
-                        <img src="images/HTML.jpg" alt="HTML logo" class="tool-logo">
+
+                    <!-- tool logos -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/HTML.jpg" alt="HTML logo" class="tool-logo">
+                        </div>
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/CSS.png" alt="CSS logo" class="tool-logo">
+                        </div>
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/js.jpg" alt="JS logo" class="tool-logo">
+                        </div>
                     </div>
-                    <!-- CSS logo -->
-                    <div>
-                        <img src="images/CSS.png" alt="CSS logo" class="tool-logo">
-                    </div>
-                    <!-- JS logo -->
-                    <div>
-                        <img src="images/js.jpg" alt="JS logo" class="tool-logo">
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/bootstrap.jpg" alt="bootstrap logo" class="tool-logo">
+                        </div>
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/React.png" alt="React logo" class="tool-logo">
+                        </div>
+                        <div class="col-md-3 col-sm-2 logo-border">
+                            <img src="images/node2.jpg" alt="Node logo" class="tool-logo">
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="col">
-
-                    <!-- bootstrap logo -->
-                    <div>
-                        <img src="images/bootstrap.jpg" alt="bootstrap logo" class="tool-logo">
-                    </div>
-                    <!-- React logo -->
-                    <div>
-                        <img src="images/React.png" alt="React logo" class="tool-logo">
-                    </div>
-                    <!-- Node logo -->
-                    <div>
-                        <img src="images/node.png" alt="Node logo" class="tool-logo">
+                <!-- description box -->
+                <div class="col-md-4 col-sm-5" id="outerlayer">
+                    <div id="i-use-description">
+                        <h3 id="tools-font">
+                            <br>I use HTML 5, CSS (Bootstrap),
+                            <br>Javascript (ReactJS, Node,
+                            <br>Express, and Handlebars).
+                            <br>For databases, MySQL and MongoDB.
+                        </h3>
                     </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="container">
-            <h5>I use HTML 5, CSS (Bootstrap), Javascript (ReactJS, Node, Express, and Handlebars), and for
-                databases, MySQL and MongoDB</h5>
-        </div>
-
-    </div>
     </div>
 
+
+
+    <!-- </div> -->
+
+
+
+
+    <!-- next section... -->
 
     <div id="section3" class="container-fluid">
         <h1>Section 3</h1>
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-                <div class="col-sm">
-                    One of three columns
-                </div>
-            </div>
-        </div>
 
 
 
