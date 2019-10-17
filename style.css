@@ -31,7 +31,12 @@
 
 
 body {
-    position: relative;
+    /* position: relative; */
+}
+
+/* parallax prep */
+body html {
+    height: 100%;
 }
 
 .affix {
@@ -103,18 +108,32 @@ body {
 
 
 #landing-page {
+    background-image: url('yayoi.jpg');
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
-    background: #3FEEE6;
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #B8E9E6 100%), #3FEEE6; */
-    height: auto;
+    /* background: #3FEEE6; */
+
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #landing-page {
-        height: 400px;
-    }
+.parllax-foreground {
+    position: absolute;
+}
+
+
+.parallax-background {
+
+    /* Set a specific height */
+    /* height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    /* opacity: 0.65; */
 }
 
 
@@ -134,10 +153,11 @@ body {
 
 
 h1 {
+    padding-top: 9em;
     font-family: Share Tech Mono;
     font-style: normal;
     font-weight: bolder;
-    color: #325B61;
+    color: whitesmoke;
 }
 
 
@@ -146,7 +166,7 @@ h2 {
     font-style: normal;
     font-weight: normal;
     font-weight: bold;
-    color: #325B61;
+    color: whitesmoke;
 }
 
 h3 {
@@ -261,21 +281,19 @@ p {
     text-align: center;
 }
 
-/* #white-box-text {} */
-
 #resume-button {
     font-family: Share Tech Mono;
-    background: #327A83;
-    color: white;
+    color: black;
     margin: 0.8em;
+    transition-duration: 0.4s;
+    border: 2px solid #327A83;
 }
 
-/* .tool-logo {
-    height: 130px;
-    width: auto;
-    background-color: white;
-    border-radius: 5px;
-} */
+
+#resume-button:hover {
+    background-color: #327A83;
+    color: white;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -317,7 +335,7 @@ p {
 #portfolio-item {
     background: black;
     color: white;
-    height: 100px;
+    height: 250px;
     width: auto;
     margin: 1em;
 }

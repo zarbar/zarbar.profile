@@ -13,8 +13,9 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
+    <!-- <body data-spy="scroll" data-target=".navbar" data-offset="50"> -->
 
 
 
@@ -59,8 +60,12 @@
     </nav>
 
     <!-- Landing Page -->
-    <div class="container-fluid" id="landing-page">
-        <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
+
+
+    <!-- the entire landing page to be the first parallax background -->
+
+    <div class="container-fluid parallax-background" id="landing-page">
+
         <h1>Hello, I'm Zara</h1>
         <h2>A web developer based in London</h2>
     </div>
@@ -68,7 +73,7 @@
 
     <!-- about page -->
 
-    <div class="container-fluid center-align-text" id="section1">
+    <div class="container-fluid center-align-text parllax-foreground" id="section1">
         <div class="container" id="about-section">
             <div class="row">
                 <div class="col-md-6" id="about-description">
@@ -96,7 +101,9 @@
                             my resume</button></span>
                 </div>
                 <div class="col-md-6">
-                    <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar">
+                    <img id="headshot" src="images/headshot.jpg" class="img-circle" alt="Zara Escobar">
+
+                    <!-- <img id="yayoi" src="images/yayoi.jpg" alt="Zara Escobar"> -->
                 </div>
 
             </div>
@@ -182,14 +189,14 @@
                     <div id="portfolio-item"> Portfolio item 2</div>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div id="portfolio-item"> Portfolio item 3</div>
                 </div>
                 <div class="col-md-6">
                     <div id="portfolio-item"> Portfolio item 4</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -212,7 +219,9 @@
                     <label for="message" id="form-personalise">Message</label>
                     <textarea class="form-control" id="message form-personalise" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="center-align-text">
+                    <button type="submit" class="btn" id="resume-button">Submit</button>
+                </div>
             </form>
         </div>
     </div>
@@ -234,6 +243,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="/path/to/parallax.js"></script> -->
 </body>
 
 </html>
