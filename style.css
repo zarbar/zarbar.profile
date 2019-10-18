@@ -29,11 +29,6 @@
 }
 
 
-
-body {
-    /* position: relative; */
-}
-
 /* parallax prep */
 body html {
     height: 100%;
@@ -65,12 +60,11 @@ body html {
 }
 
 #section1 {
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding: 1em;
     height: auto;
     color: #fff;
-    background-color: #FC4445;
-    /* text-align: center; */
+    background-color: rgba(252, 68, 69);
+    text-align: center;
 }
 
 #section2 {
@@ -81,6 +75,7 @@ body html {
     background-color: #673ab7;
     text-align: center;
     background: #327A83;
+    width: 100%;
 }
 
 #section3 {
@@ -99,43 +94,40 @@ body html {
     background-color: #FC4445;
 }
 
-
-
 #top-line {
     background-color: #327A83;
     height: 30px;
 }
-
 
 #landing-page {
     background-image: url('yayoi.jpg');
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
-    /* background: #3FEEE6; */
-
 }
-
-.parllax-foreground {
-    position: absolute;
-}
-
 
 .parallax-background {
-
-    /* Set a specific height */
-    /* height: 500px; */
-
-    /* Create the parallax scrolling effect */
     position: fixed;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    /* opacity: 0.65; */
 }
 
+#yayoi-2 {
+    background-image: url('yayoi2.png');
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+#yayoi-3 {
+    background-image: url('yayoi3.jpg');
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
 
 #zara-kletz {
     font-family: Share Tech Mono;
@@ -184,7 +176,6 @@ h4 {
     color: #FFFFFF;
 }
 
-
 p {
     font-family: Lato;
     text-align: left;
@@ -213,7 +204,6 @@ p {
 #yayoi {
     width: 100%;
     height: 100%;
-    /* max-height: 360px; */
     border-radius: 5px;
 }
 
@@ -230,7 +220,6 @@ p {
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     #yayoi {
         width: 100%;
@@ -241,8 +230,6 @@ p {
         width: 80%;
         height: auto;
     }
-
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -255,8 +242,6 @@ p {
         width: 80%;
         height: auto;
     }
-
-
 }
 
 .coding-logo {
@@ -273,13 +258,11 @@ p {
     flex-wrap: wrap;
 }
 
-#about-description {
+/* #about-description {
     padding: 1em;
-    background: rgba(255, 255, 255, 0.72);
-    border-radius: 5px;
     color: black;
     text-align: center;
-}
+} */
 
 #resume-button {
     font-family: Share Tech Mono;
@@ -289,12 +272,10 @@ p {
     border: 2px solid #327A83;
 }
 
-
 #resume-button:hover {
     background-color: #327A83;
     color: white;
 }
-
 
 @media screen and (max-width: 991px) {
     .tool-logo {
@@ -329,7 +310,24 @@ p {
 }
 
 #about-section {
-    margin: 0.5em;
+    margin-left: 6em;
+    margin-right: 6em;
+    /* margin: 6em; */
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 5px;
+    /* padding: 1em; */
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 950px) {
+    #about-section {
+        margin: 0.2em;
+        background: rgba(255, 255, 255, 0.72);
+        border-radius: 5px;
+    }
 }
 
 #portfolio-item {
@@ -359,3 +357,21 @@ footer {
 #foot {
     height: 10px;
 }
+
+/* .breakpoint-blue {
+    height: 10px;
+    background: #3FEEE6;
+    border-radius: 3px;
+} */
+
+/* .breakpoint-red {
+    height: 10px;
+    background: #FC4445;
+    border-radius: 3px;
+}
+
+.breakpoint-navy {
+    height: 10px;
+    background: #327A83;
+    border-radius: 3px;
+} */
