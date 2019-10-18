@@ -49,6 +49,27 @@ body html {
     top: 50px;
 }
 
+#contact-icons-small {
+    display: none;
+}
+
+@media screen and (max-width: 766px) and (min-width: 370px) {
+    #contact-icons {
+        display: none !important;
+    }
+
+    #contact-icons-small {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 375) {
+    #contact-icons-small {
+        margin: 0;
+    }
+}
+
+
 #call-me-maybe {
     margin: 5 5;
     /* position: absolute; */
@@ -65,6 +86,7 @@ body html {
     color: #fff;
     background-color: rgba(252, 68, 69);
     text-align: center;
+    border-radius: 3px;
 }
 
 #section2 {
@@ -76,6 +98,7 @@ body html {
     text-align: center;
     background: #327A83;
     width: 100%;
+    border-radius: 3px;
 }
 
 #section3 {
@@ -84,6 +107,8 @@ body html {
     height: auto;
     color: #fff;
     background-color: #3FEEE6;
+    text-align: center;
+    border-radius: 3px;
 }
 
 #section4 {
@@ -92,6 +117,7 @@ body html {
     height: auto;
     color: #fff;
     background-color: #FC4445;
+    border-radius: 3px;
 }
 
 #top-line {
@@ -124,6 +150,13 @@ body html {
 
 #yayoi-3 {
     background-image: url('yayoi3.jpg');
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+#yayoi-4 {
+    background-image: url('yayoi6.jpg');
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
@@ -288,9 +321,9 @@ p {
     text-align: center;
 }
 
-.logo-border {
+/* .logo-border {
     margin: 1.5em;
-}
+} */
 
 #tools-description {
     border-radius: 5px;
@@ -344,7 +377,7 @@ p {
 
 #contact-form {
     max-width: 700px;
-    padding-bottom: 2em;
+    /* padding-bottom: 1em; */
 }
 
 footer {
@@ -357,21 +390,3 @@ footer {
 #foot {
     height: 10px;
 }
-
-/* .breakpoint-blue {
-    height: 10px;
-    background: #3FEEE6;
-    border-radius: 3px;
-} */
-
-/* .breakpoint-red {
-    height: 10px;
-    background: #FC4445;
-    border-radius: 3px;
-}
-
-.breakpoint-navy {
-    height: 10px;
-    background: #327A83;
-    border-radius: 3px;
-} */

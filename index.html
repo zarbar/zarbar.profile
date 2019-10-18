@@ -15,14 +15,7 @@
 
 <body>
 
-    <!-- <body data-spy="scroll" data-target=".navbar" data-offset="50"> -->
-
-
-
     <!-- navbar -->
-    <!-- use https://getbootstrap.com/docs/4.3/examples/album/#  to try understand how grid system is used in navbar collapse section -->
-
-    <!-- to have a scrolling navbar, include the following to next line: {data-spy="affix"} -->
     <nav class="navbar navbar-inverse" data-spy="affix">
         <div class="container-fluid" id="navbarText">
             <div class="navbar-header">
@@ -32,20 +25,27 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#" id="zara-kletz">Zara Kletz</a>
+                <span id="contact-icons-smaller"></span>
+                <a class="navbar-brand" id="contact-icons-small" href="mailto:zarakletz@yahoo.co.uk"><span
+                        class="fa fa-envelope"></span></a>
+
+                <a class="navbar-brand" id="contact-icons-small"><span class="fa fa-phone"></span></a>
+
+                <a class="navbar-brand" id="contact-icons-small" href="https://www.linkedin.com/in/zara-kletz"><span
+                        class="fa fa-linkedin"></span></a>
+
+                <a class="navbar-brand" id="contact-icons-small" href="#"><span class="fa fa-github"></span></a>
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav" id="nav-options">
-                        <li><a href="#section1">About</a></li>
+                        <li><a href="#sectionx">About</a></li>
                         <li><a href="#section2">Tools</a></li>
                         <li><a href="#section3">Portfolio</a></li>
                         <li><a href="#section4">Contact</a></li>
                         </row>
-
                     </ul>
-
-
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right" id="contact-icons">
                         <li><a href="mailto:zarakletz@yahoo.co.uk"><span class="fa fa-envelope"></span></a>
                         </li>
                         <li><a><span class="fa fa-phone"></span></a>
@@ -54,9 +54,8 @@
                         </li>
                         <li><a href="#"><span class="fa fa-github"></span></a></li>
                     </ul>
-
-
                 </div>
+
             </div>
         </div>
     </nav>
@@ -64,7 +63,8 @@
     <!-- Landing Page -->
     <div class="container-fluid parallax-background" id="landing-page">
         <h1>Hello, I'm Zara</h1>
-        <h2>A web developer based in London</h2>
+        <h2>A web developer in London</h2>
+        <span id="sectionx"></span>
     </div>
 
     <!-- about page -->
@@ -97,7 +97,7 @@
     </div>
 
     <!-- parallax image yayoi-2 -->
-    <div class="container-fluid parallax-background" id="yayoi-2"> </div>
+    <div class="container-fluid parallax-background" id="yayoi-3"> </div>
 
 
     <!--Tools-->
@@ -106,36 +106,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-
-
                     <img src="images/logo collection.jpg" id="logo-collective">
-
-                    <!-- 
-                    
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-2 col-sm-3 col-4 logo-border">
-                            <img src="images/HTML.jpg" alt="HTML logo" class="tool-logo">
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-4  logo-border">
-                            <img src="images/CSS.png" alt="CSS logo" class="tool-logo">
-                        </div>
-                        <div class="col-md-2 col-sm-3 col-4  logo-border">
-                            <img src="images/js.jpg" alt="JS logo" class="tool-logo">
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-2 col-sm-3 logo-border">
-                            <img src="images/bootstrap.jpg" alt="bootstrap logo" class="tool-logo">
-                        </div>
-                        <div class="col-md-2 col-sm-3 logo-border">
-                            <img src="images/React.png" alt="React logo" class="tool-logo">
-                        </div>
-                        <div class="col-md-2 col-sm-3 logo-border">
-                            <img src="images/node2.jpg" alt="Node logo" class="tool-logo">
-                        </div>
-                    </div> -->
-
                 </div>
 
 
@@ -168,8 +139,8 @@
 
     <!-- Portfolio.. -->
 
-    <div id="section3" class="container-fluid center-align-text">
-        <div class="container" id="portfolio-box">
+    <div id="section3" class="container-fluid">
+        <div class="container-fluid center-align-text" id="portfolio-box">
             <h3 class="center-align-text">PORTFOLIO</h3>
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">
@@ -179,14 +150,6 @@
                     <div id="portfolio-item"> Portfolio item 2</div>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-md-6">
-                    <div id="portfolio-item"> Portfolio item 3</div>
-                </div>
-                <div class="col-md-6">
-                    <div id="portfolio-item"> Portfolio item 4</div>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -209,7 +172,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message" id="form-personalise">Message</label>
-                    <textarea class="form-control" id="message form-personalise" rows="3"></textarea>
+                    <textarea class="form-control" id="message form-personalise" rows="5"></textarea>
                 </div>
                 <div class="center-align-text">
                     <button type="submit" class="btn" id="resume-button">Submit</button>
