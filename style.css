@@ -81,7 +81,8 @@ body html {
 }
 
 #section1 {
-    padding: 1em;
+    padding-top: 5em;
+    padding-bottom: 5em;
     height: auto;
     color: #fff;
     background-color: rgba(252, 68, 69);
@@ -106,7 +107,7 @@ body html {
     padding-bottom: 5em;
     height: auto;
     color: #fff;
-    background-color: #3FEEE6;
+    background-color: #327A83;
     text-align: center;
     border-radius: 3px;
 }
@@ -178,11 +179,12 @@ body html {
 
 
 h1 {
-    padding-top: 9em;
+    padding-top: 8.3em;
     font-family: Share Tech Mono;
     font-style: normal;
     font-weight: bolder;
     color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -192,12 +194,12 @@ h2 {
     font-weight: normal;
     font-weight: bold;
     color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h3 {
     font-family: Share Tech Mono;
     font-weight: bold;
-    text-align: left;
     padding-bottom: 1em;
 }
 
@@ -211,7 +213,7 @@ h4 {
 
 p {
     font-family: Lato;
-    text-align: left;
+    font-size: 14pt;
 }
 
 
@@ -301,9 +303,11 @@ p {
     font-family: Share Tech Mono;
     color: black;
     margin: 0.8em;
+    margin-top: 2em;
     transition-duration: 0.4s;
     border: 2px solid #327A83;
 }
+
 
 #resume-button:hover {
     background-color: #327A83;
@@ -343,13 +347,12 @@ p {
 }
 
 #about-section {
-    margin-left: 6em;
-    margin-right: 6em;
-    /* margin: 6em; */
-    background: rgba(255, 255, 255, 0.72);
+    margin-left: 5em;
+    margin-right: 5em;
+    /* background: rgba(255, 255, 255, 0.72); */
+    background-color: #FC4445;
     border-radius: 5px;
-    /* padding: 1em; */
-    color: black;
+    color: whitesmoke;
     text-align: center;
     word-wrap: break-word;
 }
@@ -357,8 +360,9 @@ p {
 
 @media screen and (max-width: 950px) {
     #about-section {
+        margin-left: 3em;
+        margin-right: 3em;
         margin: 0.2em;
-        background: rgba(255, 255, 255, 0.72);
         border-radius: 5px;
     }
 }
@@ -369,6 +373,7 @@ p {
     height: 250px;
     width: auto;
     margin: 1em;
+    border-radius: 5px;
 }
 
 #form-personalise {
@@ -377,7 +382,6 @@ p {
 
 #contact-form {
     max-width: 700px;
-    /* padding-bottom: 1em; */
 }
 
 footer {
