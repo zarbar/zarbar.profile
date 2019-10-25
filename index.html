@@ -3,6 +3,7 @@
 
 <head>
     <title>Zara's Portfolio</title>
+    <link rel="icon" href="images/splat.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -24,23 +25,34 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" id="zara-kletz">Zara Kletz</a>
+                <a class="navbar-brand" href="#" id="zara-kletz">
+                    Zara Kletz
+                </a>
                 <span id="contact-icons-smaller"></span>
+
+
                 <a class="navbar-brand" id="contact-icons-small" href="mailto:zarakletz@yahoo.co.uk"><span
                         class="fa fa-envelope"></span></a>
-
-                <a class="navbar-brand" id="contact-icons-small"><span class="fa fa-phone"></span></a>
-
+                <a class="navbar-brand" id="contact-icons-small" href="tel:07931718353">
+                    <span class="fa fa-phone"></span>
+                </a>
                 <a class="navbar-brand" id="contact-icons-small" href="https://www.linkedin.com/in/zara-kletz"><span
                         class="fa fa-linkedin"></span></a>
 
-                <a class="navbar-brand" id="contact-icons-small" href="#"><span class="fa fa-github"></span></a>
+                <a class="navbar-brand" id="contact-icons-small" href="https://github.com/zarbar"><span
+                        class="fa fa-github"></span></a>
+
+
+
             </div>
             <div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav" id="nav-options">
-                        <li><a href="#sectionx">About</a></li>
-                        <li><a href="#section2">Tools</a></li>
+                        <!-- <li><a class="navbar-brand" href="#" id="zara-kletz">
+                                Zara Kletz
+                            </a></li> -->
+                        <li><a href="#section1">About</a></li>
+                        <!-- <li><a href="#section2">Tools</a></li> -->
                         <li><a href="#section3">Portfolio</a></li>
                         <li><a href="#section4">Contact</a></li>
                         </row>
@@ -48,11 +60,11 @@
                     <ul class="nav navbar-nav navbar-right" id="contact-icons">
                         <li><a href="mailto:zarakletz@yahoo.co.uk"><span class="fa fa-envelope"></span></a>
                         </li>
-                        <li><a><span class="fa fa-phone"></span></a>
+                        <li><a href="tel:07931718353"><span class="fa fa-phone"></span></a>
                         </li>
                         <li><a href="https://www.linkedin.com/in/zara-kletz"><span class="fa fa-linkedin"></span></a>
                         </li>
-                        <li><a href="#"><span class="fa fa-github"></span></a></li>
+                        <li><a href="https://github.com/zarbar"><span class="fa fa-github"></span></a></li>
                     </ul>
                 </div>
 
@@ -65,28 +77,22 @@
         <h1>Hello, I'm Zara</h1>
         <h2>A web developer in London</h2>
         <span id="sectionx"></span>
+
     </div>
 
     <!-- about page -->
     <div class="container-fluid" id="section1">
+
         <div class="container-fluid center-align-text" id="about-section">
             <h3>Hi There!</h3>
             <p>
-                I began training as a front and back end developer in April 2019.
-                My previous experience is in communications and marketing.<br><br>
+                I began training as a front and back end developer in April 2019. I use HTML 5, CSS (Bootstrap),
+                Javascript (React, Jquery,
+                Handlebars, Node, Express) for front-end development, Node and Express for back-end development and
+                MySQL and MongoDB for databases.<br><br>
+                My previous experience is in communications and marketing. I was born and raised in London and spent 5
+                years living and working in Japan.<br>
 
-                Working alongside web developers made me curious about their work. After extensive
-                research
-                and
-                training, which involved an online course with Codecamdemy, and a bootcamp with
-                Kodiri, I
-                finally
-                decided to become one!<br><br>
-
-                I also lived in Japan for 5 years which was really fun. Studying Japanese gave me
-                the
-                confidence to
-                start learn programming languages.
             </p>
             <span id="align-resume-button">
                 <button type="button" class="btn" id="resume-button">
@@ -96,69 +102,63 @@
         </div>
     </div>
 
-    <!-- parallax image yayoi-2 -->
-    <div class="container-fluid parallax-background" id="yayoi-3"> </div>
-
-
-    <!--Tools-->
-
-    <div id="section2" class="container-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/logo collection.jpg" id="logo-collective">
-                </div>
-
-
-                <!-- description box -->
-                <div class="col-md-5" id="tools-description">
-                    <div>
-                        <h3 id="colour-white">TOOLS</h3>
-                        <p id="colour-white">
-                            <br>I use
-                            HTML 5, CSS (Bootstrap)
-                            and Javascript (React, Jquery,
-                            Handlebars) for frontend development.
-                            Javascript ReactJS, Node,
-                            and Express for backend development.
-                            MySQL and MongoDB for databases.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <!-- parallax image yayoi-2 -->
     <div class="container-fluid parallax-background" id="yayoi-2"> </div>
-    <!-- <div class="container-fluid breakpoint-red"></div> -->
-
-
-
 
     <!-- Portfolio.. -->
 
     <div id="section3" class="container-fluid">
         <div class="container-fluid center-align-text" id="portfolio-box">
-            <h3 class="center-align-text">PORTFOLIO</h3>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <div class="text-center" id="portfolio-item"> Portfolio item 1</div>
-                </div>
-                <div class="col-md-6">
-                    <div id="portfolio-item"> Portfolio item 2</div>
+
+            <div class="port-container">
+
+                <h3 class="center-align-text">Portfolio</h3>
+                <div class="container-fluid center-align-text container-life">
+                    <img src="images/totalRickall.jpg" alt="Total Rickall" id="rickplus" class="image-life">
+                    <img src="images/totalRickall500.jpg" alt="Total Rickall" id="rickmini" class="image-life">
+                    <div class="overlay-life">
+
+
+
+                        <div class="text-life">
+                            <strong><u>Total-Rickall: A Total Rip-off Game</u></strong><br><br>
+                            A simple game I designed based on the 'Total Rickall' episode of Rick & Morty.<br><br>
+                            I used HTML, CSS, Javascript and jQuery.
+                            I pulled data from a public Rick & Morty API.<br>
+
+                            <div id="button-life-port">
+                                <a id="button-life" type="button" class="btn"
+                                    href="https://zarbar.github.io/Total-Rickall/">Visit
+                                    Website</a>
+                                <a id="button-life" type="button" class="btn"
+                                    href="https://github.com/zarbar/Total-Rickall">View
+                                    Code</a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- </div> -->
+        <!-- <div class="col-md-6">
+                    <div id="portfolio-item">More content coming soon!</div>
+                </div> -->
+        <!-- </div> -->
+    </div>
     </div>
 
     <div class="container-fluid parallax-background" id="yayoi-3"> </div>
 
     <!-- contact section -->
     <div id="section4" class="container-fluid">
-        <div class="container" id="contact-form">
+        <div class="container-fluid center-align-text">
             <h3>Drop me a line...</h3>
+        </div>
+        <div class="container" id="contact-form">
 
             <form>
                 <div class="form-group" id="form-personalise">
@@ -193,6 +193,7 @@
 
 <!-- Optional JavaScript -->
 <script type="text/javascript" src="instructions.js"></script>
+<!-- <script type="text/javascript" src="jquery.js"></script> -->
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
